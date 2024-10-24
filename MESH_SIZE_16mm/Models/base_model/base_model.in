@@ -1,0 +1,617 @@
+output.out
+prueba de three-point bending test with trilinear softening
+#LinearStatic  nsteps 1 nmodules 1
+NonLinearStatic nsteps 100 nmsteps 1 nmodules 0
+nsteps 800 rtolv 1.e-8 MaxIter 9000 steplength 0.000025 minsteplength 0.0000025 controlmode 1 stiffMode 0 
+#vtkxml tstep_all vars 4 1 4 13 65 primvars 1 1 stype 2 
+#gpexportmodule 2 tstep_step 1 domain_all ncoords 2 vars 4 1 4 13 65  
+domain 2dPlaneStress 
+OutputManager tstep_all dofman_all element_all 
+ndofman	217	nelem	377	ncrosssect	1	nmat	1	nbc	3	nic	0	nltf	2 
+node 	1	coords	 2 	0.0	0.0	
+node 	2	coords	 2 	112.5	0.0		    bc 2 0 1
+node 	3	coords	 2 	335.0	0.0	
+node 	4	coords	 2 	335.0	50.0	
+node 	5	coords	 2 	335.0	75.0	
+node 	6	coords	 2 	340.0	75.0	
+node 	7	coords	 2 	340.0	50.0	
+node 	8	coords	 2 	340.0	0.0	
+node 	9	coords	 2 	562.5	0.0			bc 2 1 1
+node 	10	coords	 2 	675.0	0.0	
+node 	11	coords	 2 	675.0	150.0	
+node 	12	coords	 2 	372.5	150.0	
+node 	13	coords	 2 	337.5	150.0		bc 2 0 2
+node 	14	coords	 2 	302.5	150.0	
+node 	15	coords	 2 	0.0	150.0	
+node 	16	coords	 2 	302.5	50.0	
+node 	17	coords	 2 	372.5	50.0	
+node 	18	coords	 2 	56.24999999999	0.0	
+node 	19	coords	 2 	168.12499999952	0.0	
+node 	20	coords	 2 	223.74999999894	0.0	
+node 	21	coords	 2 	279.37499999916	0.0	
+node 	22	coords	 2 	335.0	20.823795713669	
+node 	23	coords	 2 	335.0	37.169455367733	
+node 	24	coords	 2 	324.16666666667	50.0	
+node 	25	coords	 2 	313.33333333333	50.0	
+node 	26	coords	 2 	302.5	64.285714285671	
+node 	27	coords	 2 	302.5	78.571428571254	
+node 	28	coords	 2 	302.5	92.857142856837	
+node 	29	coords	 2 	302.5	107.14285714242	
+node 	30	coords	 2 	302.5	121.42857142811	
+node 	31	coords	 2 	302.5	135.71428571401	
+node 	32	coords	 2 	286.95604288315	150.0	
+node 	33	coords	 2 	269.21558594797	150.0	
+node 	34	coords	 2 	248.96825486192	150.0	
+node 	35	coords	 2 	225.85979682688	150.0	
+node 	36	coords	 2 	199.4859144367	150.0	
+node 	37	coords	 2 	169.38517024844	150.0	
+node 	38	coords	 2 	135.0309307802	150.0	
+node 	39	coords	 2 	95.822134667667	150.0	
+node 	40	coords	 2 	51.072800714788	150.0	
+node 	41	coords	 2 	0.0	99.999999999965	
+node 	42	coords	 2 	0.0	50.000000000035	
+node 	43	coords	 2 	335.0	62.499999999843	
+node 	44	coords	 2 	340.0	62.499999999972	
+node 	45	coords	 2 	350.83333333333	50.0	
+node 	46	coords	 2 	361.66666666667	50.0	
+node 	47	coords	 2 	372.5	64.285714285671	
+node 	48	coords	 2 	372.5	78.571428571254	
+node 	49	coords	 2 	372.5	92.857142856837	
+node 	50	coords	 2 	372.5	107.14285714242	
+node 	51	coords	 2 	372.5	121.42857142811	
+node 	52	coords	 2 	372.5	135.71428571401	
+node 	53	coords	 2 	360.83333333333	150.0	
+node 	54	coords	 2 	349.16666666667	150.0	
+node 	55	coords	 2 	325.83333333333	150.0	
+node 	56	coords	 2 	314.16666666667	150.0	
+node 	57	coords	 2 	340.0	37.169455367899	
+node 	58	coords	 2 	340.0	20.823795713883	
+node 	59	coords	 2 	395.62499999939	0.0	
+node 	60	coords	 2 	451.24999999879	0.0	
+node 	61	coords	 2 	506.87499999918	0.0	
+node 	62	coords	 2 	618.75	0.0	
+node 	63	coords	 2 	675.0	49.999999999899	
+node 	64	coords	 2 	675.0	99.999999999864	
+node 	65	coords	 2 	623.92719928539	150.0	
+node 	66	coords	 2 	579.17786533264	150.0	
+node 	67	coords	 2 	539.9690692202	150.0	
+node 	68	coords	 2 	505.61482975187	150.0	
+node 	69	coords	 2 	475.51408556341	150.0	
+node 	70	coords	 2 	449.14020317307	150.0	
+node 	71	coords	 2 	426.03174513791	150.0	
+node 	72	coords	 2 	405.78441405189	150.0	
+node 	73	coords	 2 	388.04395711679	150.0	
+node 	74	coords	 2 	290.12820851748	85.714285714045	
+node 	75	coords	 2 	238.58891039418	131.49854505723	
+node 	76	coords	 2 	184.40282845822	124.58945075628	
+node 	77	coords	 2 	288.86371395286	113.946004587	
+node 	78	coords	 2 	113.67558829286	114.77441865694	
+node 	79	coords	 2 	324.03235013073	28.948476791475	
+node 	80	coords	 2 	42.447746542512	73.967091481402	
+node 	81	coords	 2 	192.36815027689	51.902004016755	
+node 	82	coords	 2 	247.62590868135	43.598226799396	
+node 	83	coords	 2 	223.3061883895	80.470457159526	
+node 	84	coords	 2 	278.22463472002	137.11214598485	
+node 	85	coords	 2 	140.10437308609	50.796172311093	
+node 	86	coords	 2 	168.12499999951	83.579644098536	
+node 	87	coords	 2 	85.16300979768	46.000372988299	
+node 	88	coords	 2 	260.49620256421	134.61284261317	
+node 	89	coords	 2 	251.39358521673	115.11855138093	
+node 	90	coords	 2 	213.07783444187	127.63800642058	
+node 	91	coords	 2 	228.513839768	108.64774403166	
+node 	92	coords	 2 	75.437123049993	120.14462573154	
+node 	93	coords	 2 	152.25128100095	120.87134975215	
+node 	94	coords	 2 	273.07844582318	30.04287398756	
+node 	95	coords	 2 	290.97269003509	56.391924454858	
+node 	96	coords	 2 	289.57961614694	99.943381716591	
+node 	97	coords	 2 	275.62660368291	92.299877587226	
+node 	98	coords	 2 	275.96321761637	75.241359070202	
+node 	99	coords	 2 	258.26124635714	83.9336464438	
+node 	100	coords	 2 	200.74938483353	100.31630794381	
+node 	101	coords	 2 	289.77873180475	70.840838099001	
+node 	102	coords	 2 	270.80649192039	57.58302622741	
+node 	103	coords	 2 	290.32969297463	128.57142857106	
+node 	104	coords	 2 	271.43701321365	119.5794803701	
+node 	105	coords	 2 	318.75	40.618058125669	
+node 	106	coords	 2 	303.89112396851	26.042649589433	
+node 	107	coords	 2 	112.32816767858	77.780470456605	
+node 	108	coords	 2 	38.242517011137	113.26170909888	
+node 	109	coords	 2 	277.53926114626	105.51849593945	
+node 	110	coords	 2 	262.62207068557	102.0237554475	
+node 	111	coords	 2 	37.325421276177	35.350473935714	
+node 	112	coords	 2 	77.933404099956	84.534134336169	
+node 	113	coords	 2 	138.13027586199	92.592243684222	
+node 	114	coords	 2 	289.9754068274	42.201278714022	
+node 	115	coords	 2 	244.07480338979	95.853643201191	
+node 	116	coords	 2 	243.75402700278	68.510904822369	
+node 	117	coords	 2 	291.91984615458	139.80163192043	
+node 	118	coords	 2 	222.2089787175	50.774955830374	
+node 	119	coords	 2 	306.78059838053	41.523141465093	
+node 	120	coords	 2 	327.38980335948	41.347198056975	
+node 	121	coords	 2 	336.91926286559	81.158106226371	
+node 	122	coords	 2 	314.01291024683	114.15398685117	
+node 	123	coords	 2 	342.64946127483	140.64398662781	
+node 	124	coords	 2 	344.94925944454	79.591016447007	
+node 	125	coords	 2 	340.66713350084	88.192775598519	
+node 	126	coords	 2 	329.07131116966	81.192117094876	
+node 	127	coords	 2 	360.19761127893	115.79988548126	
+node 	128	coords	 2 	327.46262484901	72.386737884882	
+node 	129	coords	 2 	348.11898816047	68.749999999986	
+node 	130	coords	 2 	350.45901341565	87.110800684719	
+node 	131	coords	 2 	345.93075814212	96.127031952725	
+node 	132	coords	 2 	335.42574802785	96.668663374148	
+node 	133	coords	 2 	340.8648475095	105.52562767666	
+node 	134	coords	 2 	320.5801473458	139.67229655717	
+node 	135	coords	 2 	320.12731851649	58.330816857465	
+node 	136	coords	 2 	320.86943049565	80.173255234873	
+node 	137	coords	 2 	330.38413965375	106.54853720473	
+node 	138	coords	 2 	335.24445532924	116.38093682708	
+node 	139	coords	 2 	324.18895866522	96.696098951819	
+node 	140	coords	 2 	357.32656195017	95.132549896579	
+node 	141	coords	 2 	356.06998095879	59.36567941258	
+node 	142	coords	 2 	361.329672946	70.385218916618	
+node 	143	coords	 2 	314.56707055513	128.55891817562	
+node 	144	coords	 2 	329.05394703612	128.68635562402	
+node 	145	coords	 2 	347.10550128023	115.71749424125	
+node 	146	coords	 2 	341.16840459686	125.70252727225	
+node 	147	coords	 2 	353.32460183478	125.51369634005	
+node 	148	coords	 2 	316.98208706482	68.092298957426	
+node 	149	coords	 2 	331.66666666667	139.93036732105	
+node 	150	coords	 2 	313.42928211232	101.5994036966	
+node 	151	coords	 2 	314.03816688024	88.070719135539	
+node 	152	coords	 2 	354.30963507817	138.72273654771	
+node 	153	coords	 2 	361.28133811419	83.697294323656	
+node 	154	coords	 2 	351.83308713205	105.38229185019	
+node 	155	coords	 2 	324.61064481108	117.97088944433	
+node 	156	coords	 2 	353.3966957013	78.014503106984	
+node 	157	coords	 2 	330.9845904827	88.858898097961	
+node 	158	coords	 2 	362.89576675218	129.7169647199	
+node 	159	coords	 2 	362.09752658702	104.13504267325	
+node 	160	coords	 2 	325.83107275273	63.511970739908	
+node 	161	coords	 2 	311.37793688814	75.838683236953	
+node 	162	coords	 2 	311.08854778293	58.141766020112	
+node 	163	coords	 2 	310.86277691352	140.78910008936	
+node 	164	coords	 2 	364.54275232122	141.12261280826	
+node 	165	coords	 2 	364.81326411429	58.807322522974	
+node 	166	coords	 2 	347.58557604479	58.129721461027	
+node 	167	coords	 2 	321.02205113913	107.49382694846	
+node 	168	coords	 2 	323.48836398881	87.320827987525	
+node 	169	coords	 2 	328.02501158718	56.868557519443	
+node 	170	coords	 2 	336.82935053716	132.72010372388	
+node 	171	coords	 2 	346.7303051965	132.25491272353	
+node 	172	coords	 2 	385.21388871726	85.714285714045	
+node 	173	coords	 2 	437.58597415549	131.22639260997	
+node 	174	coords	 2 	490.56445765764	125.54576935676	
+node 	175	coords	 2 	385.3995660647	113.92748479798	
+node 	176	coords	 2 	559.57346727642	118.14627120378	
+node 	177	coords	 2 	350.9676498692	28.948476791622	
+node 	178	coords	 2 	627.8143092411	78.220289758047	
+node 	179	coords	 2 	488.00606427469	43.630884897373	
+node 	180	coords	 2 	426.31650354327	45.509468090497	
+node 	181	coords	 2 	451.77588958522	81.829514265378	
+node 	182	coords	 2 	397.0470934637	136.57039254065	
+node 	183	coords	 2 	532.24700196644	42.991495787206	
+node 	184	coords	 2 	585.46293625311	47.255217170762	
+node 	185	coords	 2 	505.53420990013	84.759490437139	
+node 	186	coords	 2 	415.9080795949	133.83350209496	
+node 	187	coords	 2 	424.49891239632	113.83706586298	
+node 	188	coords	 2 	462.4521887	128.66720902086	
+node 	189	coords	 2 	601.92736093134	115.98538816184	
+node 	190	coords	 2 	523.94143634675	119.63488398594	
+node 	191	coords	 2 	398.50305532478	31.678756837678	
+node 	192	coords	 2 	382.99529494527	58.21996580532	
+node 	193	coords	 2 	404.79564914787	117.21579265746	
+node 	194	coords	 2 	411.43451496262	96.790978201182	
+node 	195	coords	 2 	448.07544815593	109.71283233194	
+node 	196	coords	 2 	384.86300206621	99.978241648848	
+node 	197	coords	 2 	385.40800690612	71.329948465705	
+node 	198	coords	 2 	400.34601550107	57.340419731436	
+node 	199	coords	 2 	424.97889911598	72.472345614479	
+node 	200	coords	 2 	384.98704225587	128.27769625607	
+node 	201	coords	 2 	356.25	40.618058125669	
+node 	202	coords	 2 	370.49452264249	26.468209600843	
+node 	203	coords	 2 	545.15135274	82.313891492933	
+node 	204	coords	 2 	472.95601791588	101.47714725764	
+node 	205	coords	 2 	433.12475205429	93.696656125434	
+node 	206	coords	 2 	400.79238000675	79.41752009728	
+node 	207	coords	 2 	639.83670197093	115.16654747416	
+node 	208	coords	 2 	396.16418939332	93.536881216777	
+node 	209	coords	 2 	637.67457872385	35.350473935645	
+node 	210	coords	 2 	582.63832799525	86.422583301593	
+node 	211	coords	 2 	474.19200106804	73.052998234739	
+node 	212	coords	 2 	382.85720353294	43.76377060456	
+node 	213	coords	 2 	396.31991297934	105.68725436794	
+node 	214	coords	 2 	383.08015384541	139.80163192042	
+node 	215	coords	 2 	368.75367856842	42.170007666214	
+node 	216	coords	 2 	347.61019664051	41.347198057038	
+node 	217	coords	 2 	452.75322626433	52.749201850411	
+TrPlanestress2d 	1	 nodes 3 	94	106	114		crossSect 1 mat 1
+TrPlanestress2d 	2	 nodes 3 	98	99	102		crossSect 1 mat 1
+TrPlanestress2d 	3	 nodes 3 	81	83	100		crossSect 1 mat 1
+TrPlanestress2d 	4	 nodes 3 	77	103	104		crossSect 1 mat 1
+TrPlanestress2d 	5	 nodes 3 	86	81	100		crossSect 1 mat 1
+TrPlanestress2d 	6	 nodes 3 	20	21	94		crossSect 1 mat 1
+TrPlanestress2d 	7	 nodes 3 	20	82	118		crossSect 1 mat 1
+TrPlanestress2d 	8	 nodes 3 	86	76	93		crossSect 1 mat 1
+TrPlanestress2d 	9	 nodes 3 	102	99	116		crossSect 1 mat 1
+TrPlanestress2d 	10	 nodes 3 	19	81	85		crossSect 1 mat 1
+TrPlanestress2d 	11	 nodes 3 	103	84	104		crossSect 1 mat 1
+TrPlanestress2d 	12	 nodes 3 	76	86	100		crossSect 1 mat 1
+TrPlanestress2d 	13	 nodes 3 	85	81	86		crossSect 1 mat 1
+TrPlanestress2d 	14	 nodes 3 	95	101	102		crossSect 1 mat 1
+TrPlanestress2d 	15	 nodes 3 	19	20	81		crossSect 1 mat 1
+TrPlanestress2d 	16	 nodes 3 	78	92	112		crossSect 1 mat 1
+TrPlanestress2d 	17	 nodes 3 	101	98	102		crossSect 1 mat 1
+TrPlanestress2d 	18	 nodes 3 	2	85	87		crossSect 1 mat 1
+TrPlanestress2d 	19	 nodes 3 	2	19	85		crossSect 1 mat 1
+TrPlanestress2d 	20	 nodes 3 	107	78	112		crossSect 1 mat 1
+TrPlanestress2d 	21	 nodes 3 	79	23	120		crossSect 1 mat 1
+TrPlanestress2d 	22	 nodes 3 	34	75	88		crossSect 1 mat 1
+TrPlanestress2d 	23	 nodes 3 	81	20	118		crossSect 1 mat 1
+TrPlanestress2d 	24	 nodes 3 	32	33	84		crossSect 1 mat 1
+TrPlanestress2d 	25	 nodes 3 	94	21	106		crossSect 1 mat 1
+TrPlanestress2d 	26	 nodes 3 	40	15	108		crossSect 1 mat 1
+TrPlanestress2d 	27	 nodes 3 	41	42	80		crossSect 1 mat 1
+TrPlanestress2d 	28	 nodes 3 	18	2	87		crossSect 1 mat 1
+TrPlanestress2d 	29	 nodes 3 	22	23	79		crossSect 1 mat 1
+TrPlanestress2d 	30	 nodes 3 	105	79	120		crossSect 1 mat 1
+TrPlanestress2d 	31	 nodes 3 	16	114	119		crossSect 1 mat 1
+TrPlanestress2d 	32	 nodes 3 	88	75	89		crossSect 1 mat 1
+TrPlanestress2d 	33	 nodes 3 	34	35	75		crossSect 1 mat 1
+TrPlanestress2d 	34	 nodes 3 	91	90	100		crossSect 1 mat 1
+TrPlanestress2d 	35	 nodes 3 	92	108	112		crossSect 1 mat 1
+TrPlanestress2d 	36	 nodes 3 	38	39	78		crossSect 1 mat 1
+TrPlanestress2d 	37	 nodes 3 	90	76	100		crossSect 1 mat 1
+TrPlanestress2d 	38	 nodes 3 	39	40	92		crossSect 1 mat 1
+TrPlanestress2d 	39	 nodes 3 	87	80	111		crossSect 1 mat 1
+TrPlanestress2d 	40	 nodes 3 	33	34	88		crossSect 1 mat 1
+TrPlanestress2d 	41	 nodes 3 	77	104	109		crossSect 1 mat 1
+TrPlanestress2d 	42	 nodes 3 	36	76	90		crossSect 1 mat 1
+TrPlanestress2d 	43	 nodes 3 	38	78	93		crossSect 1 mat 1
+TrPlanestress2d 	44	 nodes 3 	36	37	76		crossSect 1 mat 1
+TrPlanestress2d 	45	 nodes 3 	114	106	119		crossSect 1 mat 1
+TrPlanestress2d 	46	 nodes 3 	15	41	108		crossSect 1 mat 1
+TrPlanestress2d 	47	 nodes 3 	85	86	113		crossSect 1 mat 1
+TrPlanestress2d 	48	 nodes 3 	108	80	112		crossSect 1 mat 1
+TrPlanestress2d 	49	 nodes 3 	35	36	90		crossSect 1 mat 1
+TrPlanestress2d 	50	 nodes 3 	37	38	93		crossSect 1 mat 1
+TrPlanestress2d 	51	 nodes 3 	82	102	116		crossSect 1 mat 1
+TrPlanestress2d 	52	 nodes 3 	80	87	112		crossSect 1 mat 1
+TrPlanestress2d 	53	 nodes 3 	87	85	107		crossSect 1 mat 1
+TrPlanestress2d 	54	 nodes 3 	30	31	103		crossSect 1 mat 1
+TrPlanestress2d 	55	 nodes 3 	29	30	77		crossSect 1 mat 1
+TrPlanestress2d 	56	 nodes 3 	82	94	102		crossSect 1 mat 1
+TrPlanestress2d 	57	 nodes 3 	18	87	111		crossSect 1 mat 1
+TrPlanestress2d 	58	 nodes 3 	1	18	111		crossSect 1 mat 1
+TrPlanestress2d 	59	 nodes 3 	28	29	96		crossSect 1 mat 1
+TrPlanestress2d 	60	 nodes 3 	23	4	120		crossSect 1 mat 1
+TrPlanestress2d 	61	 nodes 3 	27	28	74		crossSect 1 mat 1
+TrPlanestress2d 	62	 nodes 3 	88	89	104		crossSect 1 mat 1
+TrPlanestress2d 	63	 nodes 3 	84	88	104		crossSect 1 mat 1
+TrPlanestress2d 	64	 nodes 3 	84	33	88		crossSect 1 mat 1
+TrPlanestress2d 	65	 nodes 3 	42	1	111		crossSect 1 mat 1
+TrPlanestress2d 	66	 nodes 3 	95	102	114		crossSect 1 mat 1
+TrPlanestress2d 	67	 nodes 3 	14	32	117		crossSect 1 mat 1
+TrPlanestress2d 	68	 nodes 3 	78	39	92		crossSect 1 mat 1
+TrPlanestress2d 	69	 nodes 3 	86	93	113		crossSect 1 mat 1
+TrPlanestress2d 	70	 nodes 3 	83	81	118		crossSect 1 mat 1
+TrPlanestress2d 	71	 nodes 3 	31	14	117		crossSect 1 mat 1
+TrPlanestress2d 	72	 nodes 3 	32	84	117		crossSect 1 mat 1
+TrPlanestress2d 	73	 nodes 3 	83	91	100		crossSect 1 mat 1
+TrPlanestress2d 	74	 nodes 3 	24	25	105		crossSect 1 mat 1
+TrPlanestress2d 	75	 nodes 3 	77	30	103		crossSect 1 mat 1
+TrPlanestress2d 	76	 nodes 3 	41	80	108		crossSect 1 mat 1
+TrPlanestress2d 	77	 nodes 3 	107	85	113		crossSect 1 mat 1
+TrPlanestress2d 	78	 nodes 3 	75	35	90		crossSect 1 mat 1
+TrPlanestress2d 	79	 nodes 3 	99	115	116		crossSect 1 mat 1
+TrPlanestress2d 	80	 nodes 3 	26	27	101		crossSect 1 mat 1
+TrPlanestress2d 	81	 nodes 3 	29	77	96		crossSect 1 mat 1
+TrPlanestress2d 	82	 nodes 3 	16	26	95		crossSect 1 mat 1
+TrPlanestress2d 	83	 nodes 3 	76	37	93		crossSect 1 mat 1
+TrPlanestress2d 	84	 nodes 3 	75	90	91		crossSect 1 mat 1
+TrPlanestress2d 	85	 nodes 3 	89	75	91		crossSect 1 mat 1
+TrPlanestress2d 	86	 nodes 3 	74	28	96		crossSect 1 mat 1
+TrPlanestress2d 	87	 nodes 3 	80	42	111		crossSect 1 mat 1
+TrPlanestress2d 	88	 nodes 3 	92	40	108		crossSect 1 mat 1
+TrPlanestress2d 	89	 nodes 3 	74	97	98		crossSect 1 mat 1
+TrPlanestress2d 	90	 nodes 3 	93	78	113		crossSect 1 mat 1
+TrPlanestress2d 	91	 nodes 3 	74	96	97		crossSect 1 mat 1
+TrPlanestress2d 	92	 nodes 3 	91	83	115		crossSect 1 mat 1
+TrPlanestress2d 	93	 nodes 3 	16	95	114		crossSect 1 mat 1
+TrPlanestress2d 	94	 nodes 3 	27	74	101		crossSect 1 mat 1
+TrPlanestress2d 	95	 nodes 3 	98	97	99		crossSect 1 mat 1
+TrPlanestress2d 	96	 nodes 3 	115	83	116		crossSect 1 mat 1
+TrPlanestress2d 	97	 nodes 3 	24	105	120		crossSect 1 mat 1
+TrPlanestress2d 	98	 nodes 3 	4	24	120		crossSect 1 mat 1
+TrPlanestress2d 	99	 nodes 3 	25	16	119		crossSect 1 mat 1
+TrPlanestress2d 	100	 nodes 3 	74	98	101		crossSect 1 mat 1
+TrPlanestress2d 	101	 nodes 3 	109	104	110		crossSect 1 mat 1
+TrPlanestress2d 	102	 nodes 3 	84	103	117		crossSect 1 mat 1
+TrPlanestress2d 	103	 nodes 3 	96	77	109		crossSect 1 mat 1
+TrPlanestress2d 	104	 nodes 3 	78	107	113		crossSect 1 mat 1
+TrPlanestress2d 	105	 nodes 3 	103	31	117		crossSect 1 mat 1
+TrPlanestress2d 	106	 nodes 3 	104	89	110		crossSect 1 mat 1
+TrPlanestress2d 	107	 nodes 3 	102	94	114		crossSect 1 mat 1
+TrPlanestress2d 	108	 nodes 3 	97	96	109		crossSect 1 mat 1
+TrPlanestress2d 	109	 nodes 3 	99	97	110		crossSect 1 mat 1
+TrPlanestress2d 	110	 nodes 3 	95	26	101		crossSect 1 mat 1
+TrPlanestress2d 	111	 nodes 3 	79	105	106		crossSect 1 mat 1
+TrPlanestress2d 	112	 nodes 3 	105	25	119		crossSect 1 mat 1
+TrPlanestress2d 	113	 nodes 3 	89	91	115		crossSect 1 mat 1
+TrPlanestress2d 	114	 nodes 3 	87	107	112		crossSect 1 mat 1
+TrPlanestress2d 	115	 nodes 3 	116	83	118		crossSect 1 mat 1
+TrPlanestress2d 	116	 nodes 3 	97	109	110		crossSect 1 mat 1
+TrPlanestress2d 	117	 nodes 3 	82	116	118		crossSect 1 mat 1
+TrPlanestress2d 	118	 nodes 3 	99	110	115		crossSect 1 mat 1
+TrPlanestress2d 	119	 nodes 3 	110	89	115		crossSect 1 mat 1
+TrPlanestress2d 	120	 nodes 3 	106	105	119		crossSect 1 mat 1
+TrPlanestress2d 	121	 nodes 3 	21	3	106		crossSect 1 mat 1
+TrPlanestress2d 	122	 nodes 3 	3	22	79		crossSect 1 mat 1
+TrPlanestress2d 	123	 nodes 3 	3	79	106		crossSect 1 mat 1
+TrPlanestress2d 	124	 nodes 3 	82	20	94		crossSect 1 mat 1
+TrPlanestress2d 	125	 nodes 3 	138	146	144		crossSect 1 mat 1
+TrPlanestress2d 	126	 nodes 3 	148	161	26		crossSect 1 mat 1
+TrPlanestress2d 	127	 nodes 3 	144	155	138		crossSect 1 mat 1
+TrPlanestress2d 	128	 nodes 3 	5	128	43		crossSect 1 mat 1
+TrPlanestress2d 	129	 nodes 3 	6	129	124		crossSect 1 mat 1
+TrPlanestress2d 	130	 nodes 3 	146	170	144		crossSect 1 mat 1
+TrPlanestress2d 	131	 nodes 3 	127	158	147		crossSect 1 mat 1
+TrPlanestress2d 	132	 nodes 3 	51	158	127		crossSect 1 mat 1
+TrPlanestress2d 	133	 nodes 3 	26	162	148		crossSect 1 mat 1
+TrPlanestress2d 	134	 nodes 3 	148	162	135		crossSect 1 mat 1
+TrPlanestress2d 	135	 nodes 3 	125	157	121		crossSect 1 mat 1
+TrPlanestress2d 	136	 nodes 3 	44	129	6		crossSect 1 mat 1
+TrPlanestress2d 	137	 nodes 3 	49	159	140		crossSect 1 mat 1
+TrPlanestress2d 	138	 nodes 3 	27	161	151		crossSect 1 mat 1
+TrPlanestress2d 	139	 nodes 3 	140	153	49		crossSect 1 mat 1
+TrPlanestress2d 	140	 nodes 3 	121	157	126		crossSect 1 mat 1
+TrPlanestress2d 	141	 nodes 3 	48	153	142		crossSect 1 mat 1
+TrPlanestress2d 	142	 nodes 3 	26	161	27		crossSect 1 mat 1
+TrPlanestress2d 	143	 nodes 3 	27	151	28		crossSect 1 mat 1
+TrPlanestress2d 	144	 nodes 3 	138	155	137		crossSect 1 mat 1
+TrPlanestress2d 	145	 nodes 3 	48	142	47		crossSect 1 mat 1
+TrPlanestress2d 	146	 nodes 3 	143	144	134		crossSect 1 mat 1
+TrPlanestress2d 	147	 nodes 3 	29	122	30		crossSect 1 mat 1
+TrPlanestress2d 	148	 nodes 3 	122	155	143		crossSect 1 mat 1
+TrPlanestress2d 	149	 nodes 3 	122	143	30		crossSect 1 mat 1
+TrPlanestress2d 	150	 nodes 3 	153	156	142		crossSect 1 mat 1
+TrPlanestress2d 	151	 nodes 3 	143	155	144		crossSect 1 mat 1
+TrPlanestress2d 	152	 nodes 3 	129	156	124		crossSect 1 mat 1
+TrPlanestress2d 	153	 nodes 3 	155	167	137		crossSect 1 mat 1
+TrPlanestress2d 	154	 nodes 3 	51	127	50		crossSect 1 mat 1
+TrPlanestress2d 	155	 nodes 3 	30	143	31		crossSect 1 mat 1
+TrPlanestress2d 	156	 nodes 3 	127	147	145		crossSect 1 mat 1
+TrPlanestress2d 	157	 nodes 3 	141	142	129		crossSect 1 mat 1
+TrPlanestress2d 	158	 nodes 3 	134	163	143		crossSect 1 mat 1
+TrPlanestress2d 	159	 nodes 3 	144	149	134		crossSect 1 mat 1
+TrPlanestress2d 	160	 nodes 3 	150	151	139		crossSect 1 mat 1
+TrPlanestress2d 	161	 nodes 3 	29	150	122		crossSect 1 mat 1
+TrPlanestress2d 	162	 nodes 3 	24	135	25		crossSect 1 mat 1
+TrPlanestress2d 	163	 nodes 3 	49	153	48		crossSect 1 mat 1
+TrPlanestress2d 	164	 nodes 3 	28	150	29		crossSect 1 mat 1
+TrPlanestress2d 	165	 nodes 3 	152	171	147		crossSect 1 mat 1
+TrPlanestress2d 	166	 nodes 3 	128	160	43		crossSect 1 mat 1
+TrPlanestress2d 	167	 nodes 3 	50	159	49		crossSect 1 mat 1
+TrPlanestress2d 	168	 nodes 3 	28	151	150		crossSect 1 mat 1
+TrPlanestress2d 	169	 nodes 3 	55	149	13		crossSect 1 mat 1
+TrPlanestress2d 	170	 nodes 3 	16	162	26		crossSect 1 mat 1
+TrPlanestress2d 	171	 nodes 3 	47	165	17		crossSect 1 mat 1
+TrPlanestress2d 	172	 nodes 3 	56	134	55		crossSect 1 mat 1
+TrPlanestress2d 	173	 nodes 3 	157	168	126		crossSect 1 mat 1
+TrPlanestress2d 	174	 nodes 3 	54	152	53		crossSect 1 mat 1
+TrPlanestress2d 	175	 nodes 3 	147	158	152		crossSect 1 mat 1
+TrPlanestress2d 	176	 nodes 3 	132	157	125		crossSect 1 mat 1
+TrPlanestress2d 	177	 nodes 3 	137	139	132		crossSect 1 mat 1
+TrPlanestress2d 	178	 nodes 3 	46	141	45		crossSect 1 mat 1
+TrPlanestress2d 	179	 nodes 3 	13	123	54		crossSect 1 mat 1
+TrPlanestress2d 	180	 nodes 3 	134	149	55		crossSect 1 mat 1
+TrPlanestress2d 	181	 nodes 3 	143	163	31		crossSect 1 mat 1
+TrPlanestress2d 	182	 nodes 3 	13	149	123		crossSect 1 mat 1
+TrPlanestress2d 	183	 nodes 3 	145	154	127		crossSect 1 mat 1
+TrPlanestress2d 	184	 nodes 3 	145	146	138		crossSect 1 mat 1
+TrPlanestress2d 	185	 nodes 3 	141	165	142		crossSect 1 mat 1
+TrPlanestress2d 	186	 nodes 3 	126	168	136		crossSect 1 mat 1
+TrPlanestress2d 	187	 nodes 3 	131	132	125		crossSect 1 mat 1
+TrPlanestress2d 	188	 nodes 3 	133	138	137		crossSect 1 mat 1
+TrPlanestress2d 	189	 nodes 3 	133	137	132		crossSect 1 mat 1
+TrPlanestress2d 	190	 nodes 3 	142	165	47		crossSect 1 mat 1
+TrPlanestress2d 	191	 nodes 3 	145	147	146		crossSect 1 mat 1
+TrPlanestress2d 	192	 nodes 3 	123	152	54		crossSect 1 mat 1
+TrPlanestress2d 	193	 nodes 3 	133	145	138		crossSect 1 mat 1
+TrPlanestress2d 	194	 nodes 3 	31	163	14		crossSect 1 mat 1
+TrPlanestress2d 	195	 nodes 3 	52	158	51		crossSect 1 mat 1
+TrPlanestress2d 	196	 nodes 3 	12	164	52		crossSect 1 mat 1
+TrPlanestress2d 	197	 nodes 3 	131	133	132		crossSect 1 mat 1
+TrPlanestress2d 	198	 nodes 3 	139	167	150		crossSect 1 mat 1
+TrPlanestress2d 	199	 nodes 3 	151	161	136		crossSect 1 mat 1
+TrPlanestress2d 	200	 nodes 3 	7	166	44		crossSect 1 mat 1
+TrPlanestress2d 	201	 nodes 3 	137	167	139		crossSect 1 mat 1
+TrPlanestress2d 	202	 nodes 3 	131	154	133		crossSect 1 mat 1
+TrPlanestress2d 	203	 nodes 3 	129	166	141		crossSect 1 mat 1
+TrPlanestress2d 	204	 nodes 3 	135	160	148		crossSect 1 mat 1
+TrPlanestress2d 	205	 nodes 3 	43	169	4		crossSect 1 mat 1
+TrPlanestress2d 	206	 nodes 3 	130	153	140		crossSect 1 mat 1
+TrPlanestress2d 	207	 nodes 3 	45	166	7		crossSect 1 mat 1
+TrPlanestress2d 	208	 nodes 3 	24	169	135		crossSect 1 mat 1
+TrPlanestress2d 	209	 nodes 3 	133	154	145		crossSect 1 mat 1
+TrPlanestress2d 	210	 nodes 3 	14	163	56		crossSect 1 mat 1
+TrPlanestress2d 	211	 nodes 3 	53	164	12		crossSect 1 mat 1
+TrPlanestress2d 	212	 nodes 3 	130	131	125		crossSect 1 mat 1
+TrPlanestress2d 	213	 nodes 3 	136	168	151		crossSect 1 mat 1
+TrPlanestress2d 	214	 nodes 3 	130	140	131		crossSect 1 mat 1
+TrPlanestress2d 	215	 nodes 3 	136	148	128		crossSect 1 mat 1
+TrPlanestress2d 	216	 nodes 3 	140	154	131		crossSect 1 mat 1
+TrPlanestress2d 	217	 nodes 3 	127	159	50		crossSect 1 mat 1
+TrPlanestress2d 	218	 nodes 3 	25	162	16		crossSect 1 mat 1
+TrPlanestress2d 	219	 nodes 3 	17	165	46		crossSect 1 mat 1
+TrPlanestress2d 	220	 nodes 3 	142	156	129		crossSect 1 mat 1
+TrPlanestress2d 	221	 nodes 3 	124	156	130		crossSect 1 mat 1
+TrPlanestress2d 	222	 nodes 3 	139	157	132		crossSect 1 mat 1
+TrPlanestress2d 	223	 nodes 3 	130	156	153		crossSect 1 mat 1
+TrPlanestress2d 	224	 nodes 3 	148	160	128		crossSect 1 mat 1
+TrPlanestress2d 	225	 nodes 3 	151	168	139		crossSect 1 mat 1
+TrPlanestress2d 	226	 nodes 3 	170	171	123		crossSect 1 mat 1
+TrPlanestress2d 	227	 nodes 3 	149	170	123		crossSect 1 mat 1
+TrPlanestress2d 	228	 nodes 3 	135	169	160		crossSect 1 mat 1
+TrPlanestress2d 	229	 nodes 3 	124	130	125		crossSect 1 mat 1
+TrPlanestress2d 	230	 nodes 3 	122	167	155		crossSect 1 mat 1
+TrPlanestress2d 	231	 nodes 3 	150	167	122		crossSect 1 mat 1
+TrPlanestress2d 	232	 nodes 3 	135	162	25		crossSect 1 mat 1
+TrPlanestress2d 	233	 nodes 3 	126	136	128		crossSect 1 mat 1
+TrPlanestress2d 	234	 nodes 3 	136	161	148		crossSect 1 mat 1
+TrPlanestress2d 	235	 nodes 3 	123	171	152		crossSect 1 mat 1
+TrPlanestress2d 	236	 nodes 3 	124	125	121		crossSect 1 mat 1
+TrPlanestress2d 	237	 nodes 3 	154	159	127		crossSect 1 mat 1
+TrPlanestress2d 	238	 nodes 3 	146	171	170		crossSect 1 mat 1
+TrPlanestress2d 	239	 nodes 3 	6	124	121		crossSect 1 mat 1
+TrPlanestress2d 	240	 nodes 3 	121	126	5		crossSect 1 mat 1
+TrPlanestress2d 	241	 nodes 3 	56	163	134		crossSect 1 mat 1
+TrPlanestress2d 	242	 nodes 3 	152	164	53		crossSect 1 mat 1
+TrPlanestress2d 	243	 nodes 3 	4	169	24		crossSect 1 mat 1
+TrPlanestress2d 	244	 nodes 3 	141	166	45		crossSect 1 mat 1
+TrPlanestress2d 	245	 nodes 3 	46	165	141		crossSect 1 mat 1
+TrPlanestress2d 	246	 nodes 3 	144	170	149		crossSect 1 mat 1
+TrPlanestress2d 	247	 nodes 3 	6	121	5		crossSect 1 mat 1
+TrPlanestress2d 	248	 nodes 3 	140	159	154		crossSect 1 mat 1
+TrPlanestress2d 	249	 nodes 3 	147	171	146		crossSect 1 mat 1
+TrPlanestress2d 	250	 nodes 3 	126	128	5		crossSect 1 mat 1
+TrPlanestress2d 	251	 nodes 3 	44	166	129		crossSect 1 mat 1
+TrPlanestress2d 	252	 nodes 3 	158	164	152		crossSect 1 mat 1
+TrPlanestress2d 	253	 nodes 3 	139	168	157		crossSect 1 mat 1
+TrPlanestress2d 	254	 nodes 3 	52	164	158		crossSect 1 mat 1
+TrPlanestress2d 	255	 nodes 3 	160	169	43		crossSect 1 mat 1
+TrPlanestress2d 	256	 nodes 3 	175	193	200		crossSect 1 mat 1
+TrPlanestress2d 	257	 nodes 3 	202	191	212		crossSect 1 mat 1
+TrPlanestress2d 	258	 nodes 3 	180	60	217		crossSect 1 mat 1
+TrPlanestress2d 	259	 nodes 3 	193	182	200		crossSect 1 mat 1
+TrPlanestress2d 	260	 nodes 3 	59	60	191		crossSect 1 mat 1
+TrPlanestress2d 	261	 nodes 3 	174	185	190		crossSect 1 mat 1
+TrPlanestress2d 	262	 nodes 3 	191	180	198		crossSect 1 mat 1
+TrPlanestress2d 	263	 nodes 3 	185	174	204		crossSect 1 mat 1
+TrPlanestress2d 	264	 nodes 3 	199	194	206		crossSect 1 mat 1
+TrPlanestress2d 	265	 nodes 3 	198	180	199		crossSect 1 mat 1
+TrPlanestress2d 	266	 nodes 3 	179	61	183		crossSect 1 mat 1
+TrPlanestress2d 	267	 nodes 3 	191	198	212		crossSect 1 mat 1
+TrPlanestress2d 	268	 nodes 3 	60	61	179		crossSect 1 mat 1
+TrPlanestress2d 	269	 nodes 3 	198	192	212		crossSect 1 mat 1
+TrPlanestress2d 	270	 nodes 3 	183	9	184		crossSect 1 mat 1
+TrPlanestress2d 	271	 nodes 3 	179	183	185		crossSect 1 mat 1
+TrPlanestress2d 	272	 nodes 3 	190	185	203		crossSect 1 mat 1
+TrPlanestress2d 	273	 nodes 3 	9	62	184		crossSect 1 mat 1
+TrPlanestress2d 	274	 nodes 3 	60	179	217		crossSect 1 mat 1
+TrPlanestress2d 	275	 nodes 3 	186	182	193		crossSect 1 mat 1
+TrPlanestress2d 	276	 nodes 3 	57	177	216		crossSect 1 mat 1
+TrPlanestress2d 	277	 nodes 3 	184	178	210		crossSect 1 mat 1
+TrPlanestress2d 	278	 nodes 3 	178	184	209		crossSect 1 mat 1
+TrPlanestress2d 	279	 nodes 3 	178	189	210		crossSect 1 mat 1
+TrPlanestress2d 	280	 nodes 3 	198	199	206		crossSect 1 mat 1
+TrPlanestress2d 	281	 nodes 3 	183	184	203		crossSect 1 mat 1
+TrPlanestress2d 	282	 nodes 3 	72	73	182		crossSect 1 mat 1
+TrPlanestress2d 	283	 nodes 3 	59	191	202		crossSect 1 mat 1
+TrPlanestress2d 	284	 nodes 3 	61	9	183		crossSect 1 mat 1
+TrPlanestress2d 	285	 nodes 3 	63	64	178		crossSect 1 mat 1
+TrPlanestress2d 	286	 nodes 3 	57	58	177		crossSect 1 mat 1
+TrPlanestress2d 	287	 nodes 3 	177	201	216		crossSect 1 mat 1
+TrPlanestress2d 	288	 nodes 3 	176	190	203		crossSect 1 mat 1
+TrPlanestress2d 	289	 nodes 3 	65	66	189		crossSect 1 mat 1
+TrPlanestress2d 	290	 nodes 3 	184	62	209		crossSect 1 mat 1
+TrPlanestress2d 	291	 nodes 3 	72	182	186		crossSect 1 mat 1
+TrPlanestress2d 	292	 nodes 3 	71	72	186		crossSect 1 mat 1
+TrPlanestress2d 	293	 nodes 3 	70	71	173		crossSect 1 mat 1
+TrPlanestress2d 	294	 nodes 3 	202	212	215		crossSect 1 mat 1
+TrPlanestress2d 	295	 nodes 3 	66	67	176		crossSect 1 mat 1
+TrPlanestress2d 	296	 nodes 3 	11	65	207		crossSect 1 mat 1
+TrPlanestress2d 	297	 nodes 3 	173	71	186		crossSect 1 mat 1
+TrPlanestress2d 	298	 nodes 3 	212	17	215		crossSect 1 mat 1
+TrPlanestress2d 	299	 nodes 3 	69	70	188		crossSect 1 mat 1
+TrPlanestress2d 	300	 nodes 3 	66	176	189		crossSect 1 mat 1
+TrPlanestress2d 	301	 nodes 3 	68	69	174		crossSect 1 mat 1
+TrPlanestress2d 	302	 nodes 3 	67	68	190		crossSect 1 mat 1
+TrPlanestress2d 	303	 nodes 3 	193	175	213		crossSect 1 mat 1
+TrPlanestress2d 	304	 nodes 3 	70	173	188		crossSect 1 mat 1
+TrPlanestress2d 	305	 nodes 3 	187	186	193		crossSect 1 mat 1
+TrPlanestress2d 	306	 nodes 3 	173	186	187		crossSect 1 mat 1
+TrPlanestress2d 	307	 nodes 3 	176	67	190		crossSect 1 mat 1
+TrPlanestress2d 	308	 nodes 3 	203	184	210		crossSect 1 mat 1
+TrPlanestress2d 	309	 nodes 3 	52	51	200		crossSect 1 mat 1
+TrPlanestress2d 	310	 nodes 3 	189	178	207		crossSect 1 mat 1
+TrPlanestress2d 	311	 nodes 3 	51	50	175		crossSect 1 mat 1
+TrPlanestress2d 	312	 nodes 3 	62	10	209		crossSect 1 mat 1
+TrPlanestress2d 	313	 nodes 3 	174	69	188		crossSect 1 mat 1
+TrPlanestress2d 	314	 nodes 3 	50	49	196		crossSect 1 mat 1
+TrPlanestress2d 	315	 nodes 3 	64	11	207		crossSect 1 mat 1
+TrPlanestress2d 	316	 nodes 3 	7	57	216		crossSect 1 mat 1
+TrPlanestress2d 	317	 nodes 3 	187	193	194		crossSect 1 mat 1
+TrPlanestress2d 	318	 nodes 3 	68	174	190		crossSect 1 mat 1
+TrPlanestress2d 	319	 nodes 3 	49	48	172		crossSect 1 mat 1
+TrPlanestress2d 	320	 nodes 3 	199	180	217		crossSect 1 mat 1
+TrPlanestress2d 	321	 nodes 3 	10	63	209		crossSect 1 mat 1
+TrPlanestress2d 	322	 nodes 3 	195	181	204		crossSect 1 mat 1
+TrPlanestress2d 	323	 nodes 3 	179	185	211		crossSect 1 mat 1
+TrPlanestress2d 	324	 nodes 3 	73	12	214		crossSect 1 mat 1
+TrPlanestress2d 	325	 nodes 3 	194	199	205		crossSect 1 mat 1
+TrPlanestress2d 	326	 nodes 3 	12	52	214		crossSect 1 mat 1
+TrPlanestress2d 	327	 nodes 3 	182	73	214		crossSect 1 mat 1
+TrPlanestress2d 	328	 nodes 3 	46	45	201		crossSect 1 mat 1
+TrPlanestress2d 	329	 nodes 3 	51	175	200		crossSect 1 mat 1
+TrPlanestress2d 	330	 nodes 3 	194	193	213		crossSect 1 mat 1
+TrPlanestress2d 	331	 nodes 3 	178	64	207		crossSect 1 mat 1
+TrPlanestress2d 	332	 nodes 3 	206	194	208		crossSect 1 mat 1
+TrPlanestress2d 	333	 nodes 3 	48	47	197		crossSect 1 mat 1
+TrPlanestress2d 	334	 nodes 3 	175	50	196		crossSect 1 mat 1
+TrPlanestress2d 	335	 nodes 3 	185	183	203		crossSect 1 mat 1
+TrPlanestress2d 	336	 nodes 3 	173	187	195		crossSect 1 mat 1
+TrPlanestress2d 	337	 nodes 3 	47	17	192		crossSect 1 mat 1
+TrPlanestress2d 	338	 nodes 3 	188	173	195		crossSect 1 mat 1
+TrPlanestress2d 	339	 nodes 3 	189	176	210		crossSect 1 mat 1
+TrPlanestress2d 	340	 nodes 3 	181	199	217		crossSect 1 mat 1
+TrPlanestress2d 	341	 nodes 3 	185	204	211		crossSect 1 mat 1
+TrPlanestress2d 	342	 nodes 3 	49	172	196		crossSect 1 mat 1
+TrPlanestress2d 	343	 nodes 3 	63	178	209		crossSect 1 mat 1
+TrPlanestress2d 	344	 nodes 3 	187	194	205		crossSect 1 mat 1
+TrPlanestress2d 	345	 nodes 3 	65	189	207		crossSect 1 mat 1
+TrPlanestress2d 	346	 nodes 3 	176	203	210		crossSect 1 mat 1
+TrPlanestress2d 	347	 nodes 3 	172	48	197		crossSect 1 mat 1
+TrPlanestress2d 	348	 nodes 3 	174	188	204		crossSect 1 mat 1
+TrPlanestress2d 	349	 nodes 3 	211	181	217		crossSect 1 mat 1
+TrPlanestress2d 	350	 nodes 3 	201	45	216		crossSect 1 mat 1
+TrPlanestress2d 	351	 nodes 3 	181	195	205		crossSect 1 mat 1
+TrPlanestress2d 	352	 nodes 3 	188	195	204		crossSect 1 mat 1
+TrPlanestress2d 	353	 nodes 3 	204	181	211		crossSect 1 mat 1
+TrPlanestress2d 	354	 nodes 3 	45	7	216		crossSect 1 mat 1
+TrPlanestress2d 	355	 nodes 3 	195	187	205		crossSect 1 mat 1
+TrPlanestress2d 	356	 nodes 3 	17	46	215		crossSect 1 mat 1
+TrPlanestress2d 	357	 nodes 3 	200	182	214		crossSect 1 mat 1
+TrPlanestress2d 	358	 nodes 3 	197	192	198		crossSect 1 mat 1
+TrPlanestress2d 	359	 nodes 3 	172	197	206		crossSect 1 mat 1
+TrPlanestress2d 	360	 nodes 3 	52	200	214		crossSect 1 mat 1
+TrPlanestress2d 	361	 nodes 3 	199	181	205		crossSect 1 mat 1
+TrPlanestress2d 	362	 nodes 3 	192	17	212		crossSect 1 mat 1
+TrPlanestress2d 	363	 nodes 3 	196	172	208		crossSect 1 mat 1
+TrPlanestress2d 	364	 nodes 3 	47	192	197		crossSect 1 mat 1
+TrPlanestress2d 	365	 nodes 3 	201	177	202		crossSect 1 mat 1
+TrPlanestress2d 	366	 nodes 3 	197	198	206		crossSect 1 mat 1
+TrPlanestress2d 	367	 nodes 3 	46	201	215		crossSect 1 mat 1
+TrPlanestress2d 	368	 nodes 3 	208	194	213		crossSect 1 mat 1
+TrPlanestress2d 	369	 nodes 3 	175	196	213		crossSect 1 mat 1
+TrPlanestress2d 	370	 nodes 3 	172	206	208		crossSect 1 mat 1
+TrPlanestress2d 	371	 nodes 3 	179	211	217		crossSect 1 mat 1
+TrPlanestress2d 	372	 nodes 3 	196	208	213		crossSect 1 mat 1
+TrPlanestress2d 	373	 nodes 3 	201	202	215		crossSect 1 mat 1
+TrPlanestress2d 	374	 nodes 3 	58	8	177		crossSect 1 mat 1
+TrPlanestress2d 	375	 nodes 3 	8	59	202		crossSect 1 mat 1
+TrPlanestress2d 	376	 nodes 3 	177	8	202		crossSect 1 mat 1
+TrPlanestress2d 	377	 nodes 3 	60	180	191		crossSect 1 mat 1
+SimpleCS 1 thick 50.0 area 1.0 
+idm1 1 d 0. E 22569.0 n 0.2 tAlpha 0. damlaw 11 e0 1.41787e-4 w_k 0.07 w_r 1.65 w_f 6.0 f_k 0.568 f_r 1.180 equivstraintype 1 
+BoundaryCondition  1 loadTimeFunction 1 d 0.0
+BoundaryCondition  2 loadTimeFunction 2 d -1.0
+NodalLoad 3 loadTimeFunction 1 components 2 0.0 -10000.0
+ConstantFunction 1 f(t) 100.0
+PiecewiseLinFunction 2 nPoints 2 t 2 0. 800. f(t) 2 0. 24. 
+#%BEGIN_CHECK%
+#NODE	number		13	dof	2	unknown	d
+#LOADLEVEL
+#REACTION number 2 dof 2
+#REACTION number 9 dof 2
+#%END_CHECK%
